@@ -22,9 +22,15 @@ const Headermain = () => {
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
+          <button
+  className="menu__button nav_ac"
+  onClick={handleToggle}
+  aria-label={!isActive ? "Close navigation menu" : "Open navigation menu"}
+  aria-expanded={!isActive}
+  type="button"
+>
+  {!isActive ? <VscClose aria-hidden="true" /> : <VscGrabber aria-hidden="true" />}
+</button>
           
           </div>
         </div>

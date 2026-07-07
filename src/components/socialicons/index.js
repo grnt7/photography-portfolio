@@ -35,10 +35,15 @@ export const Socialicons = (params) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
           return (
             <li key={platform}>
-              <a href={url}>
-                <IconComponent />
-              </a>
-            </li>
+            <a
+              href={url}
+              aria-label={`Visit ${platform} profile`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconComponent aria-hidden="true" />
+            </a>
+          </li>
           );
         })}
       </ul>
