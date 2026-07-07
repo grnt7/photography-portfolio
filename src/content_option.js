@@ -75,62 +75,62 @@ const services = [{
 const dataportfolio = [{
         img: "/images/Antibes-Yachts.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+       link: "/images/Antibes-Yachts.webp",
     },
     {
         img: "/images/BWCopenhagenLibrary.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/BWCopenhagenLibrary.webp",
     },
     {
         img: "/images/DSC_0769.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/DSC_0769.webp",
     },
     {
         img: "/images/Beneteuau.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/Beneteuau.webp",
     },
     {
         img: "/images/AntibesHarbourBWSculpture.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/AntibesHarbourBWSculpture.webp",
     },
     {
         img: "/images/nice-fountain.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/nice-fountain.webp",
     },
     {
         img: "/images/nice-shop-window.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/nice-shop-window.webp",
     },
     {
         img: "/images/CityofLondonBWHmsBelfast.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/CityofLondonBWHmsBelfast.webp",
     },
     {
         img: "/images/GeometryBW.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/GeometryBW.webp",
     },
     {
         img: "/images/kasuma-green.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/kasuma-green.webp",
     },
     {
         img: "/images/kasuma-blue.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/kasuma-blue.webp",
     },
     {
         img: "/images/abstrackt-pink.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        link: "/images/abstrackt-pink.webp",
     },
 ];
 
