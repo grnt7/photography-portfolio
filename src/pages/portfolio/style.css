@@ -78,3 +78,18 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+ /* Additional styles for the scrollable gallery */
+.scroll-gallery-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Makes images snap cleanly into place */
+  gap: 20px;
+  padding: 10px;
+}
+
+.scroll-gallery-item {
+  flex: 0 0 auto; /* Prevents images from shrinking */
+  width: 80vw; /* Keeps each photo beautifully large on screen */
+  scroll-snap-align: center;
+}

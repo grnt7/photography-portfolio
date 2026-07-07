@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // 1. Imported useState
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
 export const Portfolio = () => {
@@ -22,6 +22,37 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+<div className="mb-5">
+  <h3 className="mb-3" style={{ fontSize: "1.5rem", letterSpacing: "1px" }}>Featured Work</h3>
+  
+  <Carousel 
+    fade={false}        // Set to false so it slides horizontally instead of fading
+    indicators={true}   // Shows the little navigation dots at the bottom
+    interval={5000}     // Automatically slides left-to-right every 5 seconds
+    pause="hover"       // Pauses the slide movement if the user hovers their mouse
+  >
+    {dataportfolio.slice(0, 3).map((data, i) => (
+      <Carousel.Item key={`carousel-${i}`}>
+        {/* Main background item frame */}
+        <div className="po_item" style={{ height: "450px", position: "relative" }}>
+          <img 
+            className="d-block w-100"
+            src={data.img} 
+            alt={`Slide ${i}`} 
+            style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+          />
+          {/* Overlay text content matching your portfolio dark theme */}
+          <div className="content">
+            <p>{data.description}</p>
+            <a href="#/" onClick={(e) => { e.preventDefault(); setSelectedImg(data.link); }}>
+              view project
+            </a>
+          </div>
+        </div>
+      </Carousel.Item>
+    ))}
+  </Carousel>
+</div>
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (
