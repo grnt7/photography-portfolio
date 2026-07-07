@@ -138,10 +138,10 @@ const contactConfig = {
     YOUR_EMAIL: "da.grant7@outlook.com",
     YOUR_FONE: "+44 7496 123456",
     description: "If you want to get in touch, please fill out the form below and I will get back to you as soon as possible.",
-    // creat an emailjs.com account 
+    // create an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_257fqgz",
-    YOUR_TEMPLATE_ID: "template_5tw7zsa",
+    YOUR_TEMPLATE_ID: "template_8z105kl",
     YOUR_USER_ID: "tQ7jw5nGJ4A2Ckovf",
 };
 
