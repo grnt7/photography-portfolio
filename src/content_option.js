@@ -11,7 +11,7 @@ const introdata = {
         second: "I code cool websites",
         third: "I develop mobile apps",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "A gallery of my work",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -108,30 +108,61 @@ const dataportfolio = [{
         link: "/images/nice-shop-window.webp",
     },
     {
+        img: "/images/nice-shop-window.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/nice-shop-window.webp",
+    },
+    {
+        img: "/images/nice-shop-window.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/nice-shop-window.webp",
+    },
+    {
+        img: "/images/nice-shop-window.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/nice-shop-window.webp",
+    },
+    {
+        img: "/images/masts.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/masts.webp",
+    },
+    {
+        img: "/images/logcanoesracing.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/logcanoesracing.webp",
+    },
+    {
+        img: "/images/Antibes-Yachts.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+       link: "/images/Antibes-Yachts.webp",
+    },
+    {
+        img: "/images/robot-thinker.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/robot-thinker.webp",
+    },
+    {
+        img: "/images/sharpes-lighthouse.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/sharpes-lighthouse.webp",
+    },
+    {
+        img: "/images/spiral-staircase.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/spiral-staircase.webp",
+    },
+    {
+        img: "/images/camden-slowshutter.webp",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "/images/camden-slowshutter.webp",
+    },
+    {
         img: "/images/CityofLondonBWHmsBelfast.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "/images/CityofLondonBWHmsBelfast.webp",
     },
-    {
-        img: "/images/GeometryBW.webp",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/GeometryBW.webp",
-    },
-    {
-        img: "/images/kasuma-green.webp",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/kasuma-green.webp",
-    },
-    {
-        img: "/images/kasuma-blue.webp",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/kasuma-blue.webp",
-    },
-    {
-        img: "/images/abstrackt-pink.webp",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/abstrackt-pink.webp",
-    },
+    
 ];
 
 const contactConfig = {
