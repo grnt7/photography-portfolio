@@ -17,7 +17,7 @@ const introdata = {
 
 const dataabout = {
     title: "About my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "Hi, I’m David. I’m a Full-Stack Developer and Retail Tech Specialist. I bridge the gap between technical complexity and retail operations by building high-performance e-commerce solutions. With 9+ years of hands-on retail management and a rigorous background in React and API architecture (Meta/HTML, CSS, JavaScript, React, Node.js), I deliver seamless digital experiences that drive business growth. My expertise lies in creating scalable web applications and optimizing user interfaces for maximum engagement. I thrive in collaborative environments, leveraging my retail insights to inform technical decisions and enhance customer experiences. Let's connect and explore how I can contribute to your next project.",
 };
 const worktimeline = [{
         jobtitle: "Designer of week",
