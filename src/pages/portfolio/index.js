@@ -1,11 +1,11 @@
-import React, { useState } from "react"; // 1. Imported useState
+import React, { useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { getPortfolioImagePaths } from "../../utils/portfolioImages";
 
 export const Portfolio = () => {
-  // 2. Created state to track the active full-size image link
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
@@ -13,58 +13,79 @@ export const Portfolio = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
+          <title> Portfolio | {meta.title} </title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
+            <h1 className="display-4 mb-4"> Portfolio </h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-<div className="mb-5">
-  <h3 className="mb-3" style={{ fontSize: "1.5rem", letterSpacing: "1px" }}>Featured Work</h3>
-  
-  <Carousel 
-    fade={false}        // Set to false so it slides horizontally instead of fading
-    indicators={true}   // Shows the little navigation dots at the bottom
-    interval={5000}     // Automatically slides left-to-right every 5 seconds
-    pause="hover"       // Pauses the slide movement if the user hovers their mouse
-  >
-    {dataportfolio.slice(0, 3).map((data, i) => (
-      <Carousel.Item key={`carousel-${i}`}>
-        {/* Main background item frame */}
-        <div className="po_item" style={{ height: "450px", position: "relative" }}>
-          <img 
-            className="d-block w-100"
-            src={data.img} 
-            alt={`Slide ${i}`} 
-            style={{ width: "100%", height: "100%", objectFit: "cover" }} 
-          />
-          {/* Overlay text content matching your portfolio dark theme */}
-          <div className="content">
-            <p>{data.description}</p>
-            <a href="#/" onClick={(e) => { e.preventDefault(); setSelectedImg(data.link); }}>
-              view project
-            </a>
-          </div>
+        <div className="mb-5">
+          <h3 className="mb-3 portfolio-featured-title">Featured Work</h3>
+
+          <Carousel
+            fade={false}
+            indicators={true}
+            interval={5000}
+            pause="hover"
+          >
+            {dataportfolio.slice(0, 3).map((data, i) => {
+              const images = getPortfolioImagePaths(data.img);
+
+              return (
+                <Carousel.Item key={`carousel-${i}`}>
+                  <div className="po_item po_item--carousel">
+                    <img
+                      className="d-block w-100 po_item__image"
+                      src={images.medium}
+                      srcSet={`${images.medium} 800w, ${images.full} 2400w`}
+                      sizes="(max-width: 768px) 100vw, 800px"
+                      alt={data.description}
+                      loading={i === 0 ? "eager" : "lazy"}
+                      fetchPriority={i === 0 ? "high" : "auto"}
+                      decoding="async"
+                    />
+                    <div className="content">
+                      <p>{data.description}</p>
+                      <a
+                        href="#/"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setSelectedImg(data.link);
+                        }}
+                      >
+                        view project
+                      </a>
+                    </div>
+                  </div>
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
         </div>
-      </Carousel.Item>
-    ))}
-  </Carousel>
-</div>
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
+            const images = getPortfolioImagePaths(data.img);
+
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img
+                  className="po_item__image"
+                  src={images.thumb}
+                  srcSet={`${images.thumb} 480w, ${images.medium} 800w`}
+                  sizes="(max-width: 768px) 354px, 480px"
+                  alt={data.description}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="content">
                   <p>{data.description}</p>
-                  {/* 3. Updated this link to capture the click and open the lightbox */}
-                  <a 
-                    href="#/" 
+                  <a
+                    href="#/"
                     onClick={(e) => {
-                      e.preventDefault(); // Keeps the page from jumping around
+                      e.preventDefault();
                       setSelectedImg(data.link);
                     }}
                   >
@@ -76,48 +97,28 @@ export const Portfolio = () => {
           })}
         </div>
 
-        {/* 4. The Lightbox Overlay (Only appears when selectedImg has a value) */}
         {selectedImg && (
-          <div 
-            onClick={() => setSelectedImg(null)} // Closes the image if you click anywhere on the background
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100vw',
-              height: '100vh',
-              backgroundColor: 'rgba(0, 0, 0, 0.95)', // Deep dark overlay for premium photo contrast
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              zIndex: 99999, // Ensures it sits perfectly on top of Bootstrap headers/navbars
-              cursor: 'pointer'
+          <div
+            className="portfolio-lightbox"
+            onClick={() => setSelectedImg(null)}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") {
+                setSelectedImg(null);
+              }
             }}
+            role="button"
+            tabIndex={0}
+            aria-label="Close full size image"
           >
-            {/* Close 'X' Button icon */}
-            <span style={{ 
-              position: 'absolute', 
-              top: '20px', 
-              right: '30px', 
-              color: '#fff', 
-              fontSize: '35px',
-              fontWeight: '200',
-              fontFamily: 'sans-serif'
-            }}>
+            <span className="portfolio-lightbox__close" aria-hidden="true">
               ✕
             </span>
-            
-            {/* The Fully Opened Image */}
-            <img 
-              src={selectedImg} 
-              alt="Full view project" 
-              style={{ 
-                maxWidth: '90%', 
-                maxHeight: '90%', 
-                objectFit: 'contain',
-                boxShadow: '0px 0px 25px rgba(0,0,0,0.5)',
-                borderRadius: '4px'
-              }} 
+
+            <img
+              src={selectedImg}
+              alt="Full size portfolio image"
+              className="portfolio-lightbox__image"
+              onClick={(e) => e.stopPropagation()}
             />
           </div>
         )}
