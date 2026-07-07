@@ -1,0 +1,22 @@
+# David Grant
+
+> Portfolio of David Grant, a full stack developer and photographer based in London. This site showcases projects, background, and contact information.
+
+## Main Pages
+
+- [Home](https://grnt7.github.io/photography-portfolio/): Landing page with introduction and highlights
+- [Portfolio](https://grnt7.github.io/photography-portfolio/portfolio): Selected development and creative projects
+- [About](https://grnt7.github.io/photography-portfolio/about): Background, skills, and experience
+- [Contact](https://grnt7.github.io/photography-portfolio/contact): Contact form and email details
+
+## Contact
+
+- Email: da.grant7@outlook.com
+- [Contact page](https://grnt7.github.io/photography-portfolio/contact): Send a message via the contact form
+
+## Optional
+
+- [GitHub](https://github.com/grnt7): Source code and open source work
+- [LinkedIn](https://linkedin.com): Professional profile
+- [Facebook](https://facebook.com): Social profile
+- [Twitter](https://twitter.com): Social profile

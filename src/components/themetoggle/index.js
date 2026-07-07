@@ -13,13 +13,13 @@ const Themetoggle = () => {
   }, [theme]);
   return (
     <button
-  type="button"
-  className="nav_ac"
-  onClick={themetoggle}
-  aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
->
-  <WiMoonAltWaningCrescent4 aria-hidden="true" />
-</button>
+      type="button"
+      className="nav_ac"
+      onClick={themetoggle}
+      aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+    >
+      <WiMoonAltWaningCrescent4 aria-hidden="true" />
+    </button>
   );
 };
 

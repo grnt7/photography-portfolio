@@ -27,6 +27,18 @@ const ICON_MAPPING = {
   youtube: FaYoutube
 };
 
+const PLATFORM_LABELS = {
+  facebook: "Facebook",
+  github: "GitHub",
+  instagram: "Instagram",
+  linkedin: "LinkedIn",
+  snapchat: "Snapchat",
+  tiktok: "TikTok",
+  twitter: "Twitter",
+  twitch: "Twitch",
+  youtube: "YouTube",
+};
+
 export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
@@ -37,7 +49,7 @@ export const Socialicons = (params) => {
             <li key={platform}>
             <a
               href={url}
-              aria-label={`Visit ${platform} profile`}
+              aria-label={`Visit ${PLATFORM_LABELS[platform] || platform} profile`}
               target="_blank"
               rel="noopener noreferrer"
             >
