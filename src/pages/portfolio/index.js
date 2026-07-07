@@ -37,16 +37,20 @@ export const Portfolio = () => {
               return (
                 <Carousel.Item key={`carousel-${i}`}>
                   <div className="po_item po_item--carousel">
-                    <img
-                      className="d-block w-100 po_item__image"
-                      src={images.medium}
-                      srcSet={`${images.medium} 800w, ${images.full} 2400w`}
-                      sizes="(max-width: 768px) 100vw, 800px"
-                      alt={data.description}
-                      loading={i === 0 ? "eager" : "lazy"}
-                      fetchPriority={i === 0 ? "high" : "auto"}
-                      decoding="async"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 769px)"
+                        srcSet={images.medium}
+                      />
+                      <img
+                        className="d-block w-100 po_item__image"
+                        src={images.thumb}
+                        alt={data.description}
+                        loading={i === 0 ? "eager" : "lazy"}
+                        fetchPriority={i === 0 ? "high" : "auto"}
+                        decoding="async"
+                      />
+                    </picture>
                     <div className="content">
                       <p>{data.description}</p>
                       <a
@@ -74,8 +78,6 @@ export const Portfolio = () => {
                 <img
                   className="po_item__image"
                   src={images.thumb}
-                  srcSet={`${images.thumb} 480w, ${images.medium} 800w`}
-                  sizes="(max-width: 768px) 354px, 480px"
                   alt={data.description}
                   loading="lazy"
                   decoding="async"
