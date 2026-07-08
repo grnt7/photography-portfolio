@@ -83,9 +83,9 @@ const dataportfolio = [{
         link: "/images/BWCopenhagenLibrary.webp",
     },
     {
-        img: "/images/DSC_0769.webp",
+        img: "/images/antibesharbour.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/DSC_0769.webp",
+        link: "/images/antibesharbour.webp",
     },
     {
         img: "/images/Beneteuau.webp",
@@ -108,19 +108,19 @@ const dataportfolio = [{
         link: "/images/nice-shop-window.webp",
     },
     {
-        img: "/images/nice-shop-window.webp",
+        img: "/images/yachts.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/nice-shop-window.webp",
+        link: "/images/yachts.webp",
     },
     {
-        img: "/images/nice-shop-window.webp",
+        img: "/images/guitars-bokeh.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/nice-shop-window.webp",
+        link: "/images/guitars-bokeh.webp",
     },
     {
-        img: "/images/nice-shop-window.webp",
+        img: "/images/3yachts.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/images/nice-shop-window.webp",
+        link: "/images/3yachts.webp",
     },
     {
         img: "/images/masts.webp",
@@ -133,9 +133,9 @@ const dataportfolio = [{
         link: "/images/logcanoesracing.webp",
     },
     {
-        img: "/images/Antibes-Yachts.webp",
+        img: "/images/log-canoe2.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-       link: "/images/Antibes-Yachts.webp",
+       link: "/images/log-canoe2.webp",
     },
     {
         img: "/images/robot-thinker.webp",
