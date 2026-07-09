@@ -16,8 +16,8 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "About my self",
-    aboutme: "Hi, I’m David. I’m a Full-Stack Developer and Retail Tech Specialist. I bridge the gap between technical complexity and retail operations by building high-performance e-commerce solutions. With 9+ years of hands-on retail management and a rigorous background in React and API architecture (Meta/HTML, CSS, JavaScript, React, Node.js), I deliver seamless digital experiences that drive business growth. My expertise lies in creating scalable web applications and optimizing user interfaces for maximum engagement. I thrive in collaborative environments, leveraging my retail insights to inform technical decisions and enhance customer experiences. Let's connect and explore how I can contribute to your next project.",
+    title: "The Eye Behind the Lens",
+    aboutme: "Hi, I’m David. I’m a photographer driven by curiosity, wandering lanes, and open water. My work lives at the intersection of street, travel, and maritime photography, alongside a deep fascination with both classic and abstract portraiture. For me, the camera is an excuse to look closer. On the streets, I'm searching for the candid, fleeting interactions that define a city’s soul. On the water, I'm captivated by the raw elements of sailing—the interplay of wind, canvas, and geometric lines. And when I turn my lens to people, I like to look past the surface, using light and shadow to create regular and abstract portraits that tell a deeper story.",
 };
 const worktimeline = [{
         jobtitle: "Designer of week",
@@ -37,25 +37,23 @@ const worktimeline = [{
 ];
 
 const skills = [{
-        name: "Python",
+        name: "React",
         value: 90,
     },
-    {
-        name: "Djano",
-        value: 85,
-    },
+  
     {
         name: "Javascript",
         value: 80,
     },
     {
-        name: "React",
+        name: "Python",
         value: 60,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Django",
+        value: 50,
     },
+    
 ];
 
 const services = [{
@@ -67,7 +65,7 @@ const services = [{
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
     {
-        title: "Wordpress Design",
+        title: "Shopify Design",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
     },
 ];
@@ -150,7 +148,7 @@ const dataportfolio = [{
     {
         img: "/images/spiral-staircase.webp",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "/spiral-staircase.webp",
+        link: "/images/spiral-staircase.webp",
     },
     {
         img: "/images/camden-slowshutter.webp",
