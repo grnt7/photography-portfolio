@@ -46,25 +46,20 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Nikon D3000",
-        value: 90,
-    },
-  
+const skills = [
     {
-        name: "Nikon D750",
-        value: 80,
+      name: "Nikon D3000",
+      type: "Body",
+      mileage: "100%", // Shows this is your absolute go-to workhorse
+      details: "The DSLR that started it all. CCD sensor magic."
     },
     {
-        name: "Nikon D7200",
-        value: 60,
-    },
-    {
-        name: "Nikon D7000",
-        value: 50,
-    },
-    
-];
+      name: "AF-S DX NIKKOR 18-55mm f/3.5-5.6G",
+      type: "Lens",
+      mileage: "100%",
+      details: "Versatile kit lens covering everything from landscapes to street photography."
+    }
+  ];
 
 const services = [{
         title: "UI & UX Design",
