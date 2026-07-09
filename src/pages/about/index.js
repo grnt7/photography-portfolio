@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Locations</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -57,7 +57,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Gear & Aesthetics</h3>
           </Col>
           <Col lg="7">
             {skills.map((data, i) => {

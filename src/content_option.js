@@ -20,37 +20,47 @@ const dataabout = {
     aboutme: "Hi, I’m David. I’m a photographer driven by curiosity, wandering lanes, and open water. My work lives at the intersection of street, travel, and maritime photography, alongside a deep fascination with both classic and abstract portraiture. For me, the camera is an excuse to look closer. On the streets, I'm searching for the candid, fleeting interactions that define a city’s soul. On the water, I'm captivated by the raw elements of sailing—the interplay of wind, canvas, and geometric lines. And when I turn my lens to people, I like to look past the surface, using light and shadow to create regular and abstract portraits that tell a deeper story.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Location 1",
+        where: "Nice",
+        date: "2018",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Location 2",
+        where: "Antibes",
+        date: "2018",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Location 3",
+        where: "Copenhagen",
+        date: "2018",
+    },
+    {
+        jobtitle: "Location 4",
+        where: "Sharpes Lighthouse",
+        date: "2009",
+    },
+    {
+        jobtitle: "Location 5",
+        where: "London",
+        date: "2018",
     },
 ];
 
 const skills = [{
-        name: "React",
+        name: "Nikon D3000",
         value: 90,
     },
   
     {
-        name: "Javascript",
+        name: "Nikon D750",
         value: 80,
     },
     {
-        name: "Python",
+        name: "Nikon D7200",
         value: 60,
     },
     {
-        name: "Django",
+        name: "Nikon D7000",
         value: 50,
     },
     
