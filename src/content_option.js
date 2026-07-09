@@ -36,7 +36,7 @@ const worktimeline = [{
     },
     {
         jobtitle: "Location 4",
-        where: "Sharpes Lighthouse",
+        where: "United States",
         date: "2009",
     },
     {
